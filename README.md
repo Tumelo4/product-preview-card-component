@@ -38,7 +38,10 @@ This is a solution to the [Product preview card component challenge on Frontend 
 ### What I learned
 
 ```html
-<script src="./js/index.js"></script>
+<picture>
+      <source media="(max-width:375px)" srcset="./images/image-product-mobile.jpg" class="image">
+      <img src="./images/image-product-desktop.jpg" alt="" class="image">
+ </picture>
 ```
 ```css
 .button-style:hover {
@@ -62,20 +65,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
     border-radius: 0px 0px 8px 8px;
   }
 }
-```
-```js
-window.onresize = () => {
-    
-  if (window.innerWidth <= 375)
-  {
-    image[0].src = "./images/image-product-mobile.jpg";
-  }
-  else
-  {
-    image[0].src = "./images/image-product-desktop.jpg";
-  }
-}
-```
+
 
 ### Continued development
 
