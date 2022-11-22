@@ -12,7 +12,10 @@
 </head>
 <body>
   <div class="flex_Box_Container">
-    <img src="./images/image-product-desktop.jpg" alt="" class="image">
+    <picture>
+      <source media="(max-width:375px)" srcset="./images/image-product-mobile.jpg" class="image">
+      <img src="./images/image-product-desktop.jpg" alt="" class="image">
+    </picture>
     <div class="content">
       <h2>perfume</h2>
       <h1>Gabrielle Essence Eau De Parfum</h1>
@@ -21,18 +24,13 @@
         <h1 class="h1-style">$149.99</h1>
         <p class="p-style">$169.99</p>
       </div>
-    
       <button class="button-style"><img src="./images/icon-cart.svg" alt=""> Add to Cart</button>
     </div>
-    
   </div>
-  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Tumelo</a>.
   </div>
-
-  <script src="./js/index.js"></script>
     
 </body>
 </html>
